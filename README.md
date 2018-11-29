@@ -6,6 +6,8 @@ This gem is specifically created to classify small sentence/datasets using a sup
 
 ## Installation
 
+Requires Ruby >  2.3.3
+
 Add this line to your application's Gemfile:
 
 ```ruby

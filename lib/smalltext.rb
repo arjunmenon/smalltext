@@ -15,7 +15,7 @@ module Smalltext
 
   class Classifier
 
-  	def initialize
+  	def initialize(synapse_file=nil)
   		@training_data = []
 
   		#organizing our data structures for documents , @categories, words
@@ -29,6 +29,8 @@ module Smalltext
 		@training=[]
 		@output=[]
 		@synapse = {}
+		
+		load_model(synapse_file) if synapse_file
   	end
 
   	def add_item(category, sentence)
